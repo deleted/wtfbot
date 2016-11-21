@@ -1,27 +1,15 @@
-# Hello Flask
+# WTF bot
 
-A boiler-plate starting point for a Flask web application, including SQLAlchemy, WTForms and Bootstrap.
-
-## Demo
-
-http://mfogleman.webfactional.com/hello/
+WTFBot helps you keep your terminology straight in slack.
 
 ## Dependencies
 
-    pip install Flask
-    pip install Flask-SQLAlchemy
-    pip install Flask-WTF
-
-## Customizations
-
-**Be sure to set a `SECRET_KEY` in hello/config.py** ... you can generate one like this:
-
-    import uuid
-    print uuid.uuid4().hex
+(virtualenv recommended)
+pip install -r requirements.txt
 
 ## Modules
 
-Although it is possible for a Flask app to be contained entirely within a single Python module, this project splits different functionality into different modules to facilitate maintainability. Below is a description of each module.
+This project splits different functionality into different modules to facilitate maintainability. Below is a description of each module.
 
 - `__init__.py` - Constructs the Flask app object and configures it. Imports the other modules to emulate a single-module application.
 - `config.py` - Contains the app configuration.
@@ -34,6 +22,8 @@ Although it is possible for a Flask app to be contained entirely within a single
 
     python main.py
 
-## Screenshot
+## Loading test data
 
-![](https://raw.github.com/fogleman/HelloFlask/master/screenshot.png)
+  Initial terms data are in a special secret format because they're an export from another system. Ask Ted for the JSON. Once you have it, you can run:
+
+  `scripts/load_acronyms.py`
