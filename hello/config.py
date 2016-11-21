@@ -1,3 +1,0 @@
-SECRET_KEY = 'CHANGE_ME'
-SQLALCHEMY_DATABASE_URI = 'sqlite:///hello.db'
-STATIC_ROOT = None

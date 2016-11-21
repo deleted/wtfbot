@@ -1,5 +1,5 @@
 from flask import url_for
-from hello import app
+from wtfbot import app
 import urlparse
 
 def static(path):

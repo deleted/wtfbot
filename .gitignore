@@ -1,0 +1,4 @@
+*pyc
+.venv
+wtfbot/wtfbot.db
+fixtures/acronyms.json

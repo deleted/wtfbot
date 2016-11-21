@@ -1,0 +1,11 @@
+{% from "util.html" import render_field %}
+
+{% extends "base.html" %}
+
+{% block content %}
+    <ul>
+    {% for term in terms %}
+      <li>{{ term.text }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
