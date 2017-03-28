@@ -1,3 +1,4 @@
 SECRET_KEY = 'CHANGE_ME'
-SQLALCHEMY_DATABASE_URI = 'sqlite:///wtfbot.db'
+#SQLALCHEMY_DATABASE_URI = 'sqlite:///opt/wtfbot.db'
+SQLALCHEMY_DATABASE_URI = 'mysql://db'
 STATIC_ROOT = None
